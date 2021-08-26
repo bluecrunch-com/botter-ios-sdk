@@ -100,7 +100,7 @@ internal class B_SocketManager : WebSocketDelegate  {
             isConnected = true
             pingCheck = true
             print("websocket is connected: \(headers)")
-            if sendOpening {
+            if sendOpening && Botter.chatScreenIsActive(){
                 sendOpeningMessage()
                 sendOpening = false
             }

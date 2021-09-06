@@ -100,9 +100,13 @@ internal class B_SocketManager : WebSocketDelegate  {
             isConnected = true
             pingCheck = true
             print("websocket is connected: \(headers)")
-            if sendOpening && Botter.chatScreenIsActive(){
-                sendOpeningMessage()
-                sendOpening = false
+            if self.sendOpening {
+                if !b_ChatViewController.isClosing{
+                    self.sendOpeningMessage()
+                }else{
+                    b_ChatViewController.isClosing = false
+                }
+                self.sendOpening = false
             }
             
         case .disconnected(let reason, let code):
@@ -241,10 +245,11 @@ internal class B_SocketManager : WebSocketDelegate  {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
             print("done")
             if self.isConnected{
-                self.socket.write(string: msgString)
-            }else{
-                self.connect()
-                self.pauseSession()
+                self.socket.write(ping: "PING".data(using: .utf8)!) {
+                    if self.isConnected{
+                        self.socket.write(string: msgString)
+                    }
+                }
             }
         })
         

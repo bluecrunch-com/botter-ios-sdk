@@ -86,6 +86,8 @@ internal class ChatSessionManager {
 //        print(attributes as AnyObject )
         if attributes.count > 0{
             BotterSettingsManager.userSettings = attributes
+        }else{
+            BotterSettingsManager.userSettings = [[String : Any]]()
         }
     }
     

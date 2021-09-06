@@ -14,7 +14,7 @@ final class b_ChatPresenter {
     
     // MARK: - Private properties -
     
-    private unowned var view: ChatViewInterface
+    private  var view: ChatViewInterface
     private var interactor: ChatInteractorInterface
     private var wireframe: ChatWireframeInterface
     
@@ -46,9 +46,9 @@ extension b_ChatPresenter: ChatPresenterInterface {
     func openSocket() {
         self.interactor.openSocket()
         B_SocketManager.shared.connectionUpdated = {
-            //            DispatchQueue.main.async {
-            self.view.connectionUpdated(isConnected: B_SocketManager.shared.isConnected)
-            //            }
+            DispatchQueue.main.async {
+                self.view.connectionUpdated(isConnected: B_SocketManager.shared.isConnected)
+            }
             
         }
     }

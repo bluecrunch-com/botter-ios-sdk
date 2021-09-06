@@ -158,6 +158,8 @@ func chatScreenIsActive()->Bool{
     return false
 }
 
+
+
 func floatingControllerIsVisible()->Bool{
     let windows = UIApplication.shared.windows
     if let floatingWindow = windows.last(where:  { (window) -> Bool in

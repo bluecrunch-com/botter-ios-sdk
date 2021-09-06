@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,11 +21,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8p-2X-qNG">
-                                <rect key="frame" x="4" y="421.5" width="406" height="53"/>
+                                <rect key="frame" x="4" y="273.5" width="592" height="53"/>
                                 <string key="text">Welcome,
 to BOTTER Mobile</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
@@ -54,11 +52,11 @@ to BOTTER Mobile</string>
             <objects>
                 <viewController storyboardIdentifier="b_StartConversationViewController" id="doQ-LX-xpz" customClass="b_StartConversationViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JJc-nd-Etp" customClass="b_HeaderView" customModule="Botter" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="scaleAspectFit" image="botterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="WsU-1X-Brh" customClass="b_HeaderLogo" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="30" y="60" width="28" height="28"/>
+                                <rect key="frame" x="30" y="16" width="28" height="28"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="64T-Zp-30L"/>
@@ -71,7 +69,7 @@ to BOTTER Mobile</string>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xo5-ha-W3n">
-                                <rect key="frame" x="344" y="52" width="40" height="44"/>
+                                <rect key="frame" x="530" y="8" width="40" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="6aw-5F-t9E"/>
                                     <constraint firstAttribute="width" constant="40" id="nh7-80-s5f"/>
@@ -83,30 +81,30 @@ to BOTTER Mobile</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there 👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1F-72-WKh" customClass="b_ChatHeadLine" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="30" y="104" width="350" height="31.5"/>
+                                <rect key="frame" x="30" y="60" width="536" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’re here to answer your questions about Company. Ask us anything!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utV-R1-0e6" customClass="b_ChatWelcomeLbl" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="30" y="143.5" width="350" height="33.5"/>
+                                <rect key="frame" x="30" y="99.5" width="536" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgR-uB-MuQ">
-                                <rect key="frame" x="0.0" y="253" width="414" height="643"/>
+                                <rect key="frame" x="0.0" y="192.5" width="600" height="407.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NxU-q7-Pfa">
-                                <rect key="frame" x="127" y="818" width="160" height="36"/>
+                                <rect key="frame" x="220" y="556" width="160" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-UE-dcb" customClass="b_HeaderLogo" customModule="Botter" customModuleProvider="target">
                                         <rect key="frame" x="12" y="10.5" width="15" height="15"/>
                                         <color key="tintColor" red="0.3921568627" green="0.17254901959999999" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Run on BOTTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lh-hU-IzM">
-                                        <rect key="frame" x="37" y="10.5" width="111" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We run on BOTTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lh-hU-IzM">
+                                        <rect key="frame" x="40" y="10.5" width="108" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -133,10 +131,10 @@ to BOTTER Mobile</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-OS-e9W" customClass="b_AllSidsCardView" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="24" y="193" width="366" height="180"/>
+                                <rect key="frame" x="24" y="132.5" width="552" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a conversation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVT-gG-X9M" customClass="b_MediumChatText" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="14" width="334" height="19.5"/>
+                                        <rect key="frame" x="16" y="14" width="520" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -292,17 +290,17 @@ to BOTTER Mobile</string>
             <objects>
                 <viewController storyboardIdentifier="b_InvoiceDetailsViewController" id="wCr-Xe-2b3" customClass="b_InvoiceDetailsViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r6R-yk-S82">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REP-aJ-fWq" customClass="b_BasicBoldLbl" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="152.5" y="64" width="109" height="21"/>
+                                <rect key="frame" x="245.5" y="20" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCF-Td-fOs">
-                                <rect key="frame" x="361" y="59.5" width="37" height="30"/>
+                                <rect key="frame" x="547" y="15.5" width="37" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -312,18 +310,18 @@ to BOTTER Mobile</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QTS-HY-Mhp">
-                                <rect key="frame" x="0.0" y="101" width="414" height="761"/>
+                                <rect key="frame" x="0.0" y="57" width="600" height="543"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="header" id="Cfm-Xt-7Qw" customClass="BasicInvoiceItemTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cfm-Xt-7Qw" id="CWa-ci-xbs">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bj-ag-63b" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="13" width="382" height="18"/>
+                                                    <rect key="frame" x="16" y="13" width="568" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -340,14 +338,14 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ElementTableViewCell" rowHeight="144" id="lkE-bV-hAn" customClass="ElementTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="99.5" width="414" height="144"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="600" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lkE-bV-hAn" id="gwT-hw-zIw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="144"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niK-21-KdV" customClass="InvoiceItemView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="4" y="8" width="410" height="128"/>
+                                                    <rect key="frame" x="4" y="8" width="596" height="128"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JDg-X0-tL0">
                                                             <rect key="frame" x="12" y="4" width="90" height="90"/>
@@ -362,20 +360,20 @@ to BOTTER Mobile</string>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyy-cK-mzl">
-                                                            <rect key="frame" x="12" y="127" width="394" height="1"/>
+                                                            <rect key="frame" x="12" y="127" width="580" height="1"/>
                                                             <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="lDZ-2m-7Bo"/>
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPZ-Rn-zVb" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="110" y="27" width="288" height="20.5"/>
+                                                            <rect key="frame" x="110" y="27" width="474" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-LI-EBl" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="110" y="51.5" width="288" height="18"/>
+                                                            <rect key="frame" x="110" y="51.5" width="474" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -415,10 +413,10 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicInvoiceItemTableViewCell" id="3HM-PM-xcQ" customClass="BasicInvoiceItemTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="243.5" width="414" height="24"/>
+                                        <rect key="frame" x="0.0" y="243.5" width="600" height="24"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3HM-PM-xcQ" id="3yr-Zb-4yd">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7H-KB-JWH" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
@@ -428,7 +426,7 @@ to BOTTER Mobile</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUk-75-YUb" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="318.5" y="4" width="79.5" height="18"/>
+                                                    <rect key="frame" x="504.5" y="4" width="79.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -448,14 +446,14 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="details" id="Hn3-00-QmF" customClass="BasicInvoiceItemTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="267.5" width="414" height="26"/>
+                                        <rect key="frame" x="0.0" y="267.5" width="600" height="26"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hn3-00-QmF" id="Ag6-rj-7KI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="26"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W95-Z6-gQv" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="4" width="382" height="18"/>
+                                                    <rect key="frame" x="16" y="4" width="568" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -505,17 +503,17 @@ to BOTTER Mobile</string>
             <objects>
                 <viewController storyboardIdentifier="b_ChatViewController" id="mBd-sT-l3W" customClass="b_ChatViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="elV-lh-Q1K" customClass="chatView" customModule="Botter" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="cnj-ya-FOi" customClass="b_HeaderView" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olx-3d-3Dm">
-                                        <rect key="frame" x="0.0" y="34" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="34" width="600" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTER" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhJ-tN-HXW" customClass="b_ChatHeader" customModule="Botter" customModuleProvider="target">
-                                                <rect key="frame" x="72" y="5" width="264" height="26"/>
+                                                <rect key="frame" x="72" y="5" width="450" height="26"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -569,7 +567,7 @@ to BOTTER Mobile</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Uu-kD-Bjh">
-                                                <rect key="frame" x="344" y="8" width="40" height="44"/>
+                                                <rect key="frame" x="530" y="8" width="40" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="kTQ-Rf-iw9"/>
                                                     <constraint firstAttribute="width" constant="40" id="oe8-DR-xXH"/>
@@ -608,22 +606,22 @@ to BOTTER Mobile</string>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uRS-dj-06M">
-                                <rect key="frame" x="0.0" y="100" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="100" width="600" height="399"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserChatTableViewCell" rowHeight="80" id="mDg-0s-5zt" customClass="UserChatTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mDg-0s-5zt" id="fLe-ZE-d5u">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-AY-cfX" customClass="userBubbelView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="319.5" y="12" width="72.5" height="56"/>
+                                                    <rect key="frame" x="505.5" y="12" width="72.5" height="56"/>
                                                     <color key="backgroundColor" red="0.3921568627" green="0.17254901959999999" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfm-sH-FJq" customClass="b_UserMesgLbl" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="335.5" y="24" width="34.5" height="32"/>
+                                                    <rect key="frame" x="521.5" y="24" width="34.5" height="32"/>
                                                     <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -648,24 +646,24 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserFaildChatTableViewCell" rowHeight="112" id="pM8-zM-dZL" customClass="UserChatTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="135.5" width="414" height="112"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="600" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pM8-zM-dZL" id="zFh-PT-ENL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FE-yY-kKD">
-                                                    <rect key="frame" x="319.5" y="12" width="72.5" height="56"/>
+                                                    <rect key="frame" x="505.5" y="12" width="72.5" height="56"/>
                                                     <color key="backgroundColor" red="0.83137254901960778" green="0.2627450980392157" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAw-TX-1Sv">
-                                                    <rect key="frame" x="335.5" y="24" width="34.5" height="32"/>
+                                                    <rect key="frame" x="521.5" y="24" width="34.5" height="32"/>
                                                     <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfR-Q6-ZoK">
-                                                    <rect key="frame" x="162" y="72.5" width="230" height="27.5"/>
+                                                    <rect key="frame" x="348" y="72.5" width="230" height="27.5"/>
                                                     <state key="normal">
                                                         <attributedString key="attributedTitle">
                                                             <fragment content="Failed to send the message, ">
@@ -709,10 +707,10 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BotChatTableViewCell" rowHeight="80" id="bOJ-8p-W44" customClass="BotChatTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="247.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="247.5" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bOJ-8p-W44" id="0xM-f3-fgx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7D-oG-TDO" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
@@ -778,10 +776,10 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MapTableViewCell" rowHeight="258" id="SWE-7p-2JH" customClass="MapTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="327.5" width="414" height="258"/>
+                                        <rect key="frame" x="0.0" y="327.5" width="600" height="258"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SWE-7p-2JH" id="W5e-Ra-8HK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="258"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fU4-Da-aRe" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
@@ -892,10 +890,10 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherTableViewCell" rowHeight="164" id="NCP-xd-9Md" customClass="WeatherTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="585.5" width="414" height="164"/>
+                                        <rect key="frame" x="0.0" y="585.5" width="600" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NCP-xd-9Md" id="w3b-lS-WH2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="164"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35y-FZ-Y1C" customClass="b_AccentView" customModule="Botter" customModuleProvider="target">
@@ -929,10 +927,10 @@ to BOTTER Mobile</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebh-Z9-mQa">
-                                                    <rect key="frame" x="60" y="12" width="294" height="140"/>
+                                                    <rect key="frame" x="60" y="12" width="480" height="140"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnY-qO-CaR" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="16" y="16" width="262" height="21.5"/>
+                                                            <rect key="frame" x="16" y="16" width="448" height="21.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21.5" id="adQ-ca-Jdo"/>
                                                             </constraints>
@@ -941,19 +939,19 @@ to BOTTER Mobile</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIf-3L-HFJ" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="16" y="45.5" width="262" height="10.5"/>
+                                                            <rect key="frame" x="16" y="45.5" width="448" height="10.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqa-3b-ssp" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="251.5" y="108" width="26.5" height="12"/>
+                                                            <rect key="frame" x="437.5" y="108" width="26.5" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiw-WB-gxT" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="251.5" y="88" width="26.5" height="12"/>
+                                                            <rect key="frame" x="437.5" y="88" width="26.5" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1029,10 +1027,10 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TypingIndicatorTableViewCell" rowHeight="80" id="JQa-hX-qoP" customClass="TypingIndicatorTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="749.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="749.5" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JQa-hX-qoP" id="2Lj-al-iHN">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wvc-E0-HEi">
@@ -1097,21 +1095,21 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AudioBotTableViewCell" rowHeight="80" id="Wsp-4v-oxm" customClass="AudioBotTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="829.5" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="829.5" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wsp-4v-oxm" id="Od7-TL-QHw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CL-Pd-8UB">
-                                                    <rect key="frame" x="52" y="0.0" width="362" height="80"/>
+                                                    <rect key="frame" x="52" y="0.0" width="548" height="80"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="4QI-d8-l3n"/>
                                                     </constraints>
                                                 </view>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GtH-sT-m06" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="56" y="12" width="298" height="56"/>
+                                                    <rect key="frame" x="56" y="12" width="484" height="56"/>
                                                     <subviews>
                                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="lCQ-vZ-uZc">
                                                             <rect key="frame" x="9.5" y="18" width="20" height="20"/>
@@ -1136,13 +1134,13 @@ to BOTTER Mobile</string>
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axO-Tt-Ja7">
-                                                            <rect key="frame" x="38.5" y="38" width="251.5" height="14"/>
+                                                            <rect key="frame" x="38.5" y="38" width="437.5" height="14"/>
                                                             <fontDescription key="fontDescription" name="FuturaBT-Book" family="Futura" pointSize="12"/>
                                                             <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cus-e1-OiH">
-                                                            <rect key="frame" x="36.5" y="7" width="253" height="31"/>
+                                                            <rect key="frame" x="36.5" y="7" width="439" height="31"/>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <connections>
                                                                 <action selector="seekBarValueChanded:" destination="Wsp-4v-oxm" eventType="valueChanged" id="YTO-wO-ImM"/>
@@ -1219,14 +1217,14 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroTableViewCell" rowHeight="250" id="EUW-L6-T62" customClass="HeroTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="909.5" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="909.5" width="600" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EUW-L6-T62" id="d5p-S8-fvB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5M-PG-z7e" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="56" y="12" width="298" height="226"/>
+                                                    <rect key="frame" x="56" y="12" width="484" height="226"/>
                                                     <color key="backgroundColor" red="0.91764705879999997" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-af-O02" customClass="b_BotterMesgLbl" customModule="Botter" customModuleProvider="target">
@@ -1266,7 +1264,7 @@ to BOTTER Mobile</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Z8-ca-bXy" customClass="CustomCollection" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="64" y="40.5" width="278" height="185.5"/>
+                                                    <rect key="frame" x="64" y="40.5" width="464" height="185.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewLayout key="collectionViewLayout" id="7Bw-Ab-PQW" customClass="b_tagViewLayOut" customModule="Botter" customModuleProvider="target"/>
                                                     <cells>
@@ -1311,10 +1309,10 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TriviaTableViewCell" rowHeight="250" id="bSn-XN-AP2" customClass="TriviaTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1159.5" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="1159.5" width="600" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bSn-XN-AP2" id="Ovz-kG-ndD">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHk-X7-QEb" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
@@ -1403,17 +1401,17 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageBotTableViewCell" id="HGi-Ge-I0K" customClass="ImageBotTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1409.5" width="414" height="224"/>
+                                        <rect key="frame" x="0.0" y="1409.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HGi-Ge-I0K" id="IMF-c7-TRh">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRo-IS-w9N" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="56" y="12" width="298" height="200"/>
+                                                    <rect key="frame" x="56" y="12" width="298" height="20"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-Gd-kpu">
-                                                            <rect key="frame" x="8" y="8" width="282" height="184"/>
+                                                            <rect key="frame" x="8" y="8" width="282" height="4"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.91764705879999997" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1426,7 +1424,7 @@ to BOTTER Mobile</string>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbr-Rl-Tr1" customClass="b_AccentView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="176" width="36" height="36"/>
+                                                    <rect key="frame" x="16" y="-4" width="36" height="36"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="botterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bqE-Mf-khI">
                                                             <rect key="frame" x="2" y="2" width="32" height="32"/>
@@ -1474,27 +1472,27 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GifTableViewCell" id="Itc-Rj-QLn" customClass="GifTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1633.5" width="414" height="224"/>
+                                        <rect key="frame" x="0.0" y="1453.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Itc-Rj-QLn" id="Ob6-Lb-Wq1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po8-AQ-gXS" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="56" y="12" width="298" height="200"/>
+                                                    <rect key="frame" x="56" y="12" width="298" height="20"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vqA-tL-jY2">
-                                                            <rect key="frame" x="8" y="8" width="282" height="184"/>
+                                                            <rect key="frame" x="8" y="8" width="282" height="4"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_gif" translatesAutoresizingMaskIntoConstraints="NO" id="uTw-X9-M29">
-                                                            <rect key="frame" x="119" y="70" width="60" height="60"/>
+                                                            <rect key="frame" x="119" y="-20" width="60" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="60" id="3Z0-d7-G9n"/>
                                                                 <constraint firstAttribute="height" constant="60" id="ash-Im-vgx"/>
                                                             </constraints>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnN-YJ-zIx">
-                                                            <rect key="frame" x="8" y="8" width="282" height="184"/>
+                                                            <rect key="frame" x="8" y="8" width="282" height="4"/>
                                                             <connections>
                                                                 <action selector="btnPressed" destination="Itc-Rj-QLn" eventType="touchUpInside" id="mfD-RQ-kW4"/>
                                                             </connections>
@@ -1516,7 +1514,7 @@ to BOTTER Mobile</string>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25G-1b-tRa" customClass="b_AccentView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="176" width="36" height="36"/>
+                                                    <rect key="frame" x="16" y="-4" width="36" height="36"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="botterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-Gm-8fh">
                                                             <rect key="frame" x="2" y="2" width="32" height="32"/>
@@ -1565,7 +1563,7 @@ to BOTTER Mobile</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GallaryTableViewCell" rowHeight="344" id="Ish-5G-Ajz" customClass="GallaryTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1857.5" width="414" height="344"/>
+                                        <rect key="frame" x="0.0" y="1497.5" width="600" height="344"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ish-5G-Ajz" id="GXG-aB-mn8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="344"/>
@@ -1836,23 +1834,23 @@ itemTitle.alpha = 0</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoBotTableViewCell" id="4om-US-p7V" customClass="VideoBotTableViewCell" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="2201.5" width="414" height="224"/>
+                                        <rect key="frame" x="0.0" y="1841.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4om-US-p7V" id="0HF-Do-qYy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPu-LT-BlT" customClass="botBubbelView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="56" y="12" width="298" height="200"/>
+                                                    <rect key="frame" x="56" y="12" width="298" height="20"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="afT-y7-nc7">
-                                                            <rect key="frame" x="8" y="8" width="282" height="184"/>
+                                                            <rect key="frame" x="8" y="8" width="282" height="4"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ta9-qE-u1n">
-                                                            <rect key="frame" x="8" y="8" width="282" height="184"/>
+                                                            <rect key="frame" x="8" y="8" width="282" height="4"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYu-Du-V9l">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="282" height="184"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="282" height="4"/>
                                                                     <state key="normal" image="play-circle"/>
                                                                     <connections>
                                                                         <action selector="playVideoClicked" destination="4om-US-p7V" eventType="touchUpInside" id="UhV-kv-6U4"/>
@@ -1882,7 +1880,7 @@ itemTitle.alpha = 0</string>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2O-dx-htN" customClass="b_AccentView" customModule="Botter" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="176" width="36" height="36"/>
+                                                    <rect key="frame" x="16" y="-4" width="36" height="36"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="botterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pcd-Kn-7i5">
                                                             <rect key="frame" x="2" y="2" width="32" height="32"/>
@@ -1936,7 +1934,7 @@ itemTitle.alpha = 0</string>
                                 </connections>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27u-gJ-guB" customClass="b_PaddedUILabel" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="190" y="120" width="34.5" height="18.5"/>
+                                <rect key="frame" x="283" y="120" width="34.5" height="18.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1960,19 +1958,19 @@ itemTitle.alpha = 0</string>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Ux-RT-jdn">
-                                <rect key="frame" x="0.0" y="761" width="414" height="0.0"/>
+                                <rect key="frame" x="0.0" y="499" width="600" height="0.0"/>
                                 <subviews>
                                     <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpK-GP-tZB">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry. It looks like there was an issue with your internet connection. Please check your connection and try again." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WUA-KK-I0Q">
-                                                <rect key="frame" x="20" y="4" width="342.5" height="62"/>
+                                                <rect key="frame" x="20" y="4" width="528.5" height="62"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzH-le-j67">
-                                                <rect key="frame" x="370.5" y="8" width="27.5" height="22"/>
+                                                <rect key="frame" x="556.5" y="8" width="27.5" height="22"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="27.5" id="B5c-fy-LKx"/>
                                                 </constraints>
@@ -2001,20 +1999,20 @@ itemTitle.alpha = 0</string>
                                 </constraints>
                             </stackView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="fbO-1Z-HJ8" customClass="b_TextBoxFeild" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="797" width="414" height="65"/>
+                                <rect key="frame" x="0.0" y="535" width="600" height="65"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pET-7t-zmD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
                                         <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="3MI-uP-HKq"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsQ-9V-oRq">
-                                        <rect key="frame" x="8" y="13" width="384" height="40"/>
+                                        <rect key="frame" x="8" y="13" width="570" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyL-pM-xen" customClass="b_AccentBtn" customModule="Botter" customModuleProvider="target">
-                                                <rect key="frame" x="346" y="10.5" width="30" height="30"/>
+                                                <rect key="frame" x="532" y="10.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="4Wr-QA-Zgv"/>
                                                     <constraint firstAttribute="width" constant="30" id="QLZ-fe-XYS"/>
@@ -2025,7 +2023,7 @@ itemTitle.alpha = 0</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuX-KU-BeN" customClass="b_AccentBtn" customModule="Botter" customModuleProvider="target">
-                                                <rect key="frame" x="312" y="10.5" width="30" height="30"/>
+                                                <rect key="frame" x="498" y="10.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="H0R-6c-x2L"/>
                                                     <constraint firstAttribute="width" constant="30" id="yF5-qr-FTY"/>
@@ -2047,7 +2045,7 @@ itemTitle.alpha = 0</string>
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-ZM-5nD">
-                                                <rect key="frame" x="44" y="6" width="262" height="28"/>
+                                                <rect key="frame" x="44" y="6" width="448" height="28"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2108,7 +2106,7 @@ itemTitle.alpha = 0</string>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-FM-DZ2">
-                                <rect key="frame" x="127" y="761" width="160" height="36"/>
+                                <rect key="frame" x="220" y="499" width="160" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="epT-mK-IEv" customClass="b_HeaderLogo" customModule="Botter" customModuleProvider="target">
                                         <rect key="frame" x="12" y="10.5" width="15" height="15"/>
@@ -2118,8 +2116,8 @@ itemTitle.alpha = 0</string>
                                             <constraint firstAttribute="width" constant="15" id="Zwg-aI-NdB"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We Run on BOTTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8X-h9-EId">
-                                        <rect key="frame" x="37" y="11" width="111" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We run on BOTTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8X-h9-EId">
+                                        <rect key="frame" x="40" y="11" width="108" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2187,11 +2185,11 @@ itemTitle.alpha = 0</string>
             <objects>
                 <viewController storyboardIdentifier="b_WebLinksViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1bD-de-UBG" customClass="b_WebLinksViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wg5-gE-BJi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggn-ax-58M">
-                                <rect key="frame" x="0.0" y="90" width="414" height="806"/>
+                                <rect key="frame" x="0.0" y="90" width="600" height="510"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -2199,17 +2197,17 @@ itemTitle.alpha = 0</string>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-Bq-R6Y">
-                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
                                 <color key="color" red="0.14901960780000001" green="0.1960784314" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhx-dj-vjf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W49-Da-uH5">
-                                        <rect key="frame" x="0.0" y="27" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="27" width="600" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-8s-25d">
-                                                <rect key="frame" x="362" y="8" width="40" height="44"/>
+                                                <rect key="frame" x="548" y="8" width="40" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Xiq-Ae-Dtc"/>
                                                     <constraint firstAttribute="width" constant="40" id="uyE-aw-gwe"/>
@@ -2220,7 +2218,7 @@ itemTitle.alpha = 0</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQB-Qu-4a8">
-                                                <rect key="frame" x="86" y="9" width="272" height="42"/>
+                                                <rect key="frame" x="86" y="9" width="458" height="42"/>
                                                 <string key="text">Welcome to al dwaa pharmacies
 اهلاً و سهلاً بكم</string>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
@@ -2310,27 +2308,27 @@ itemTitle.alpha = 0</string>
             <objects>
                 <viewController storyboardIdentifier="b_menuViewController" id="EjK-HP-wRY" customClass="b_menuViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a09-PC-nPN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGA-QH-8W4">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMg-Le-7Be">
-                                        <rect key="frame" x="0.0" y="818" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="600" width="600" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rIS-an-QtT">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="ecn-T9-eiL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1v-Hm-wDc">
-                                                    <rect key="frame" x="167" y="20" width="80" height="10"/>
+                                                    <rect key="frame" x="260" y="20" width="80" height="10"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="3lX-9Z-n73"/>
@@ -2343,7 +2341,7 @@ itemTitle.alpha = 0</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbM-Wb-WHG">
-                                                    <rect key="frame" x="368" y="10" width="30" height="30"/>
+                                                    <rect key="frame" x="554" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="Lti-UK-xez"/>
                                                         <constraint firstAttribute="height" constant="30" id="aFs-su-YgL"/>
@@ -2367,20 +2365,20 @@ itemTitle.alpha = 0</string>
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="header" id="hFw-pV-ajJ">
-                                                <rect key="frame" x="0.0" y="83" width="414" height="52.5"/>
+                                                <rect key="frame" x="0.0" y="83" width="600" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hFw-pV-ajJ" id="S9G-iL-qHP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyh-XY-D1u" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="20" y="16" width="361.5" height="20.5"/>
+                                                            <rect key="frame" x="20" y="16" width="547.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight1" translatesAutoresizingMaskIntoConstraints="NO" id="nEi-Bb-VMG">
-                                                            <rect key="frame" x="385.5" y="19.5" width="8.5" height="13.5"/>
+                                                            <rect key="frame" x="571.5" y="19.5" width="8.5" height="13.5"/>
                                                             <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="13.5" id="E0h-PK-EHQ"/>
@@ -2388,10 +2386,10 @@ itemTitle.alpha = 0</string>
                                                             </constraints>
                                                         </imageView>
                                                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMs-Iv-Brd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
                                                         </button>
                                                         <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yb0-iv-3pa">
-                                                            <rect key="frame" x="20" y="51.5" width="374" height="1"/>
+                                                            <rect key="frame" x="20" y="51.5" width="560" height="1"/>
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="bqw-u2-8lP"/>
@@ -2417,20 +2415,20 @@ itemTitle.alpha = 0</string>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="UVY-Hs-AJt">
-                                                <rect key="frame" x="0.0" y="135.5" width="414" height="52.5"/>
+                                                <rect key="frame" x="0.0" y="135.5" width="600" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UVY-Hs-AJt" id="f7w-0K-cL9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-8O-xIi" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
-                                                            <rect key="frame" x="60" y="16" width="334" height="20.5"/>
+                                                            <rect key="frame" x="60" y="16" width="520" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1C-SY-JI9">
-                                                            <rect key="frame" x="60" y="51.5" width="334" height="1"/>
+                                                            <rect key="frame" x="60" y="51.5" width="520" height="1"/>
                                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="JsL-d0-8IF"/>
@@ -2491,20 +2489,20 @@ itemTitle.alpha = 0</string>
             <objects>
                 <viewController storyboardIdentifier="b_DatePickerPopViewController" id="xbS-79-aG8" customClass="b_DatePickerPopViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsd-jb-oBB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-cu-Now">
-                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="40" width="600" height="560"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Your Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-kw-e4O">
-                                        <rect key="frame" x="28" y="-10" width="358" height="29"/>
+                                        <rect key="frame" x="28" y="34" width="544" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IS-o3-Isq" customClass="b_AccentView" customModule="Botter" customModuleProvider="target">
-                                        <rect key="frame" x="137" y="287.5" width="140" height="50"/>
+                                        <rect key="frame" x="230" y="331.5" width="140" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-eo-raL" customClass="b_UserMesgLbl" customModule="Botter" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="16.5" width="100" height="17"/>
@@ -2538,13 +2536,13 @@ itemTitle.alpha = 0</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfect day for you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-BD-mDo">
-                                        <rect key="frame" x="28" y="27" width="358" height="16.5"/>
+                                        <rect key="frame" x="28" y="71" width="544" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Nobel-Light" family="Nobel" pointSize="14"/>
                                         <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-nR-RbQ">
-                                        <rect key="frame" x="0.0" y="51.5" width="414" height="216"/>
+                                        <rect key="frame" x="0.0" y="95.5" width="600" height="216"/>
                                         <date key="date" timeIntervalSinceReferenceDate="552925087.01843405">
                                             <!--2018-07-10 14:18:07 +0000-->
                                         </date>
@@ -2565,7 +2563,7 @@ itemTitle.alpha = 0</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xi-vw-qzD" customClass="b_HeaderView" customModule="Botter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close-1" translatesAutoresizingMaskIntoConstraints="NO" id="Boa-mf-8JY">
                                         <rect key="frame" x="24" y="17.5" width="15" height="15"/>
@@ -2624,27 +2622,27 @@ itemTitle.alpha = 0</string>
             <objects>
                 <viewController storyboardIdentifier="b_AttachFileViewController" id="D9K-O4-BA0" customClass="b_AttachFileViewController" customModule="Botter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Es-80-anT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flA-FU-5wk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-Ix-Hhi">
-                                        <rect key="frame" x="0.0" y="818" width="414" height="34"/>
+                                        <rect key="frame" x="0.0" y="600" width="600" height="0.0"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hB5-Dn-MUi">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="jrv-9O-StC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbp-YP-gy2">
-                                                    <rect key="frame" x="167" y="20" width="80" height="10"/>
+                                                    <rect key="frame" x="260" y="20" width="80" height="10"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="9hp-vC-kYj"/>
@@ -2657,7 +2655,7 @@ itemTitle.alpha = 0</string>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-pa-9f0">
-                                                    <rect key="frame" x="368" y="10" width="30" height="30"/>
+                                                    <rect key="frame" x="554" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="Xn6-IE-Rej"/>
                                                         <constraint firstAttribute="width" constant="30" id="yaf-Py-3dw"/>
@@ -2680,10 +2678,10 @@ itemTitle.alpha = 0</string>
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="GXk-l8-rdY">
-                                                <rect key="frame" x="0.0" y="78" width="414" height="52.5"/>
+                                                <rect key="frame" x="0.0" y="78" width="600" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GXk-l8-rdY" id="VGK-cm-gMv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="52.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0s-qd-1uX" customClass="b_BasicRegularLbl" customModule="Botter" customModuleProvider="target">
@@ -2693,7 +2691,7 @@ itemTitle.alpha = 0</string>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHX-dQ-Brb">
-                                                            <rect key="frame" x="20" y="51.5" width="374" height="1"/>
+                                                            <rect key="frame" x="20" y="51.5" width="560" height="1"/>
                                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="1" id="zKn-tb-KHo"/>
@@ -2749,11 +2747,6 @@ itemTitle.alpha = 0</string>
             <point key="canvasLocation" x="-1200" y="758.70535714285711"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="27u-gJ-guB">
-            <size key="intrinsicContentSize" width="34.5" height="18.5"/>
-        </designable>
-    </designables>
     <resources>
         <image name="arrowRight1" width="8.5" height="13.5"/>
         <image name="attachIcon" width="20" height="20"/>

@@ -27,6 +27,7 @@ final class b_ChatViewController: UIViewController {
     var currentAudio = -1
     static var botData = b_BotData()
     var history = true
+    static var isClosing = false
     
     // MARK: - Lifecycle -
     
@@ -34,6 +35,7 @@ final class b_ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        b_ChatViewController.isClosing = false
         history = !B_SocketManager.first
         startListen()
         menuBtn.isHidden = b_ChatViewController.botData.menu.actions.count == 0
@@ -93,6 +95,7 @@ final class b_ChatViewController: UIViewController {
         if BotterSettingsManager.showOnClosePopup{
             self.showOnClosePopup()
         }else{
+            
             close()
         }
     }
@@ -130,6 +133,7 @@ final class b_ChatViewController: UIViewController {
     }
     
     func close(){
+        b_ChatViewController.isClosing = true
         self.presenter.close()
         NotificationCenter.default.removeObserver(self)
         if self.history{

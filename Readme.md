@@ -80,6 +80,15 @@ pod Botter
 Botter.show(APIKey: "your API key")
 ```
 
+You will need to set connection parameters as following:
+
+```
+BotterSettingsManager.setBotSocket(url: "Socket URL")
+BotterSettingsManager.setBotBase(url: "Base URL")
+BotterSettingsManager.setBotUpload(url: "Upload URL")
+        
+```
+
 ## Supported integration languages
 <li> Swift. </li>
 

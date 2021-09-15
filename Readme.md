@@ -82,11 +82,10 @@ Botter.show(APIKey: "your API key")
 
 You will need to set connection parameters as following:
 
-```
+```swift
 BotterSettingsManager.setBotSocket(url: "Socket URL")
 BotterSettingsManager.setBotBase(url: "Base URL")
-BotterSettingsManager.setBotUpload(url: "Upload URL")
-        
+BotterSettingsManager.setBotUpload(url: "Upload URL")      
 ```
 
 ## Supported integration languages

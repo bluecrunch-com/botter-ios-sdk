@@ -60,6 +60,7 @@ public class BotterSettingsManager  {
         }
     }
     public static var showOnClosePopup : Bool = true
+    public static var shouldHandleConectionStatus = true
     
     public static var bottomMargin : CGFloat = 40{
         didSet{

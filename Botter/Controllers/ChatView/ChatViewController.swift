@@ -148,7 +148,11 @@ final class b_ChatViewController: UIViewController {
     }
     
     func connectionUpdated(isConnected : Bool){
-        connectionErrorView.isHidden = isConnected
+        if BotterSettingsManager.shouldHandleConectionStatus{
+            DispatchQueue.main.async {
+                self.connectionErrorView.isHidden = isConnected
+            }
+        }
     }
     
     @IBAction func botterWebsiteClicked (){

@@ -49,7 +49,7 @@ public class WebSocketServer: Server, ConnectionDelegate {
         listener.newConnectionHandler = {[weak self] conn in
             let transport = TCPTransport(connection: conn)
             let c = ServerConnection(transport: transport)
-            c.gifDelegate = self
+            c.delegate = self
             self?.connections[c.uuid] = c
         }
 //        listener.stateUpdateHandler = { state in
@@ -95,7 +95,7 @@ public class ServerConnection: Connection, HTTPServerDelegate, FramerEventClient
     private let frameHandler = FrameCollector()
     private var didUpgrade = false
     public var onEvent: ((ConnectionEvent) -> Void)?
-    public weak var gifDelegate: ConnectionDelegate?
+    public weak var delegate: ConnectionDelegate?
     private let id: String
     var uuid: String {
         return id
@@ -149,7 +149,7 @@ public class ServerConnection: Connection, HTTPServerDelegate, FramerEventClient
             didUpgrade = true
             let response = httpHandler.createResponse(headers: [:])
             transport.write(data: response, completion: {_ in })
-            gifDelegate?.didReceive(event: .connected(self, headers))
+            delegate?.didReceive(event: .connected(self, headers))
             onEvent?(.connected(headers))
         case .failure(let error):
             onEvent?(.error(error))
@@ -170,19 +170,19 @@ public class ServerConnection: Connection, HTTPServerDelegate, FramerEventClient
     public func didForm(event: FrameCollector.Event) {
         switch event {
         case .text(let string):
-            gifDelegate?.didReceive(event: .text(self, string))
+            delegate?.didReceive(event: .text(self, string))
             onEvent?(.text(string))
         case .binary(let data):
-            gifDelegate?.didReceive(event: .binary(self, data))
+            delegate?.didReceive(event: .binary(self, data))
             onEvent?(.binary(data))
         case .pong(let data):
-            gifDelegate?.didReceive(event: .pong(self, data))
+            delegate?.didReceive(event: .pong(self, data))
             onEvent?(.pong(data))
         case .ping(let data):
-            gifDelegate?.didReceive(event: .ping(self, data))
+            delegate?.didReceive(event: .ping(self, data))
             onEvent?(.ping(data))
         case .closed(let reason, let code):
-            gifDelegate?.didReceive(event: .disconnected(self, reason, code))
+            delegate?.didReceive(event: .disconnected(self, reason, code))
             onEvent?(.disconnected(reason, code))
         case .error(let error):
             onEvent?(.error(error))

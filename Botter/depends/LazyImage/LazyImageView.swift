@@ -5,7 +5,6 @@
 //  Created by Lampros Giampouras on 01/12/2018.
 //
 
-import Foundation
 import UIKit
 
 @objc public protocol LazyImageViewDelegate: class {

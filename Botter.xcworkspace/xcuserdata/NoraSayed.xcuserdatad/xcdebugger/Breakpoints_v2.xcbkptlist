@@ -336,8 +336,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "181"
             endingLineNumber = "181"
-            landmarkName = "sendOpeningMessage()"
-            landmarkType = "7">
+            landmarkName = "B_SocketManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -368,7 +368,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "180"
             endingLineNumber = "180"
-            landmarkName = "sendOpeningMessage()"
+            landmarkName = "sendAttrebutes(attributes:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1790,7 +1790,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "396"
             endingLineNumber = "396"
-            landmarkName = "handleMessage(msg:)"
+            landmarkName = "sendPostBack(value:title:slug:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

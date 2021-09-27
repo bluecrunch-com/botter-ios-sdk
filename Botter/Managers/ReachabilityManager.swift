@@ -8,11 +8,16 @@
 
 import UIKit
 
+
 internal class b_ReachabilityManager: NSObject {
     static  let shared = b_ReachabilityManager()
     // 3. Boolean to track network reachability
+    
+    var AFReachability = NetworkReachabilityManager()
+    
     var isNetworkAvailable : Bool {
-        return reachabilityStatus != .notReachable
+        print(AFReachability?.isReachable ?? false )
+        return (AFReachability?.isReachable ?? false )
     }
     // 4. Tracks current NetworkStatus (notReachable, reachableViaWiFi, reachableViaWWAN)
     var reachabilityStatus: Reachability.NetworkStatus = .notReachable

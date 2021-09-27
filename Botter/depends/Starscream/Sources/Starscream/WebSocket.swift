@@ -89,7 +89,6 @@ public enum WebSocketEvent {
 
 public protocol WebSocketDelegate: class {
     func didReceive(event: WebSocketEvent, client: WebSocket)
-    func connectionUpdates(canSend : Bool)
 }
 
 open class WebSocket: WebSocketClient, EngineDelegate {
@@ -176,12 +175,4 @@ open class WebSocket: WebSocketClient, EngineDelegate {
             s.onEvent?(event)
         }
     }
-    
-    public func connectionChanged(canSend: Bool) {
-        callbackQueue.async { [weak self] in
-            guard let s = self else { return }
-            s.delegate?.connectionUpdates(canSend: canSend)
-        }
-    }
-    
 }

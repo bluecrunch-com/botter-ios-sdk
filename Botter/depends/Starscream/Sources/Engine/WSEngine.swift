@@ -23,11 +23,7 @@ FrameCollectorDelegate, HTTPHandlerDelegate {
     private var secKeyValue = ""
     private let writeQueue = DispatchQueue(label: "com.vluxe.starscream.writequeue")
     private let mutex = DispatchSemaphore(value: 1)
-    private var canSend = false{
-        didSet{
-            delegate?.connectionChanged(canSend: canSend)
-        }
-    }
+    private var canSend = false
     
     weak var delegate: EngineDelegate?
     public var respondToPingWithPong: Bool = true

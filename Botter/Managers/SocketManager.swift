@@ -128,7 +128,10 @@ internal class B_SocketManager : WebSocketDelegate  {
         case .viabilityChanged(_):
             break
         case .reconnectSuggested(_):
-            self.connect()
+            if b_ReachabilityManager.shared.isNetworkAvailable
+            {
+                self.connect()
+            }
             break
         case .cancelled:
             isConnected = false
@@ -270,8 +273,18 @@ internal class B_SocketManager : WebSocketDelegate  {
             })
 
         }else{
-            self.connect()
-            self.resumeSession()
+            if b_ReachabilityManager.shared.isNetworkAvailable{
+                self.connect()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    self.resumeSession()
+                }
+            }else{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    //call any function
+                    self.resumeSession()
+                    
+                   }
+            }
         }
 
 //        if self.isConnected{

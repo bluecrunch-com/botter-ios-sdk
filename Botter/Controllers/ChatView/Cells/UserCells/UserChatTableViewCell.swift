@@ -67,7 +67,7 @@ class UserChatTableViewCell: UITableViewCell {
         }
     }
     
-    @IBAction func resend(){
+    @IBAction func resend(_ sender : UIButton){
         if resendAction != nil{
             resendAction(self.msg)
         }

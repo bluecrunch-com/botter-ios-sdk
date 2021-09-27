@@ -10,9 +10,6 @@
 /// - CallFailed: The download request did not succeed.
 /// - noDataAvailable: The download request returned nil response.
 /// - CorruptedData: The downloaded data are corrupted and can not be read.
-import Foundation
-import UIKit
-
 public enum LazyImageError: Error {
     case CallFailed
     case noDataAvailable

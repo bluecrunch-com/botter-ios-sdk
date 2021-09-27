@@ -50,6 +50,7 @@ extension b_ChatInteractor: ChatInteractorInterface {
              
         }else{
             B_SocketManager.shared.connect()
+            
             completion(false)
         }
     }

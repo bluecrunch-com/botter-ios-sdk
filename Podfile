@@ -7,15 +7,19 @@ target 'Botter' do
 
   # Pods for BotterSDK
 #  pod 'ReachabilitySwift'
-  pod 'Alamofire' ,'5.0.0-beta.3'
-  pod 'Firebase/Messaging'
+
+  #pod 'Alamofire', '~> 5.4'
+#  pod 'ReachabilitySwift'
+ 
+
 #  pod 'b_IQKeyboardManagerSwift'
 #  pod 'LazyImage'
 
-target 'BotterTests' do
-       inherit! :search_paths
-       # Pods for testing
-   end
+
+#target 'BotterTests' do
+#       inherit! :search_paths
+#       # Pods for testing
+#   end
   
 end
 

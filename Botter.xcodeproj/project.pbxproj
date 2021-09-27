@@ -715,7 +715,7 @@
 			path = EndForm;
 			sourceTree = "<group>";
 		};
-		8C3D701F2701EB4E0009D7CE /* Alamofire */ = {
+		8C3D708F27020A7A0009D7CE /* AF */ = {
 			isa = PBXGroup;
 			children = (
 				8C3D70222701EB4E0009D7CE /* MultipartFormData.swift */,
@@ -754,7 +754,7 @@
 				8C3D70432701EB4E0009D7CE /* ResponseSerialization.swift */,
 				8C3D70442701EB4E0009D7CE /* SessionDelegate.swift */,
 			);
-			path = Alamofire;
+			path = AF;
 			sourceTree = "<group>";
 		};
 		8C463ACD24BF379B00B78E96 /* DataSource */ = {
@@ -1207,7 +1207,7 @@
 		8CC4F597248D15E2000692AE /* depends */ = {
 			isa = PBXGroup;
 			children = (
-				8C3D701F2701EB4E0009D7CE /* Alamofire */,
+				8C3D708F27020A7A0009D7CE /* AF */,
 				8CCECCAF2517AF9600157D31 /* IQKeyboardManagerSwift */,
 				8C1B44AC24E98A5400853B03 /* Markup */,
 				8C1B447F24E55E4100853B03 /* LazyImage */,

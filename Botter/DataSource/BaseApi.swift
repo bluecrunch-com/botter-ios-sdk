@@ -50,8 +50,8 @@ class BaseDataSource : Any {
                     let json = response.value as? [String: Any]
                     completion(json,nil)
                     break
-                case .failure(let error):
-                    if let data = response.data {
+                case .failure(_):
+                    if response.data != nil {
 //                        print("Print Server Error: " + String(data: data, encoding: String.Encoding.utf8)!)
                     }
 //                    print(error)
@@ -71,8 +71,8 @@ class BaseDataSource : Any {
                     let json = response.value as? [[String: Any]]
                     completion(json,nil)
                     break
-                case .failure(let error):
-                    if let data = response.data {
+                case .failure(_):
+                    if response.data != nil {
 //                        print("Print Server Error: " + String(data: data, encoding: String.Encoding.utf8)!)
                     }
 //                    print(error)
@@ -100,8 +100,8 @@ class BaseDataSource : Any {
                 let json = response.value as? [String: Any]
                 completion(json,nil)
                 break
-            case .failure(let error):
-                    if let data = response.data {
+            case .failure(_):
+                if response.data != nil {
 //                        print("Print Server Error: " + String(data: data, encoding: String.Encoding.utf8)!)
                     }
 //                    print(error)

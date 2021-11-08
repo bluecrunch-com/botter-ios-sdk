@@ -25,6 +25,7 @@ public class BotterSettingsManager  {
     
     internal static var userSettings : [[String:Any]] = [[String:Any]]()
     internal static var googleMapKey : String = ""
+    internal static var actions = [CustomAction]()
     
     public static var AccentColor : UIColor = UIColor.init(codeString: "#642c7a")
     
@@ -214,6 +215,26 @@ public class BotterSettingsManager  {
     
     public static func enableShareLocation(googleMapKey : String){
         BotterSettingsManager.googleMapKey = googleMapKey
+    }
+    
+    public static func addCustomActionAtIntro(title : String ,icon: UIImage , action : @escaping (()->())){
+        let customAction = CustomAction()
+        customAction.title = title
+        customAction.icon = icon
+        customAction.action = action
+        
+        BotterSettingsManager.actions.append(customAction)
+    }
+    
+    public static func clearCustomActions(){
+        BotterSettingsManager.actions.removeAll()
+    }
+    public static func resetUserData(){
+        ChatSessionManager.shared.setActiveSessionMessage(msg: nil)
+        B_SocketManager.first = true
+        B_SocketManager.shared = B_SocketManager()
+        NotificationManager.shared.clear()
+        setUserSettings(userSettings: [:])
     }
 }
 

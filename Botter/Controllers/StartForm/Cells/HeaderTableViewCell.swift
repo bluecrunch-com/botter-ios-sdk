@@ -11,15 +11,30 @@ import UIKit
 class HeaderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var continueSessionView : b_AllSidsCardView!
+    @IBOutlet weak var oldConvName : b_BasicMediumLbl!
+    @IBOutlet weak var oldConvText : b_BasicMediumLbl!
+    @IBOutlet weak var logoImage : UIImageView!
+    
+    var action : (()->())!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
         if ChatSessionManager.shared.hasActiveSession(){
-//            updateHeaderHeight(height: 400)
             continueSessionView.isHidden = false
+            oldConvName.text = BotterSettingsManager.ChatTitleText
+            oldConvText.text = ChatSessionManager.shared.getActiveSessionMsg()
+            logoImage.tintColor = BotterSettingsManager.FontColor
+            logoImage.image = BotterSettingsManager.logo
+            let logo : UIImage = UIImage(named: "botterIcon", in: MyFrameworkBundle.bundle , compatibleWith: nil)!
+            
+            if BotterSettingsManager.logo == logo{
+                self.logoImage.contentMode = .center
+            }else{
+                self.logoImage.contentMode = .scaleAspectFit
+            }
         }else{
-//            updateHeaderHeight(height: 268)
             continueSessionView.isHidden = true
         }
     }
@@ -30,4 +45,10 @@ class HeaderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func continueConversationClicked(){
+        if action != nil{
+            action()
+        }
+    }
+    
 }

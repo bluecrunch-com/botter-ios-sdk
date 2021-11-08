@@ -181,6 +181,9 @@ internal class B_SocketManager : WebSocketDelegate  {
     
     func sendOpeningMessage(){
         var allAtributes = [[String:Any]]()
+        if BotterSettingsManager.showStartForm == true{
+            allAtributes.append(["user_type":"guest"])
+        }
         if BotterSettingsManager.userSettings.count > 0{
             allAtributes.append(contentsOf: BotterSettingsManager.userSettings)
         }

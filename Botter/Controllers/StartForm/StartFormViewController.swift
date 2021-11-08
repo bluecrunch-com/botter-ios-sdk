@@ -30,24 +30,26 @@ final class b_StartFormViewController: b_StartConversationViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if ChatSessionManager.shared.hasActiveSession(){
-            updateHeaderHeight(height: 420)
-            continueSessionView.isHidden = false
-            oldConvName.text = BotterSettingsManager.ChatTitleText
-            oldConvText.text = ChatSessionManager.shared.getActiveSessionMsg()
-            logoImage.tintColor = BotterSettingsManager.FontColor
-            logoImage.image = BotterSettingsManager.logo
-            let logo : UIImage = UIImage(named: "botterIcon", in: MyFrameworkBundle.bundle , compatibleWith: nil)!
-            
-            if BotterSettingsManager.logo == logo{
-                self.logoImage.contentMode = .center
-            }else{
-                self.logoImage.contentMode = .scaleAspectFit
-            }
-        }else{
-            updateHeaderHeight(height: 268)
-            continueSessionView.isHidden = true
-        }
+//        if ChatSessionManager.shared.hasActiveSession(){
+//            updateHeaderHeight(height: 420)
+//            continueSessionView.isHidden = false
+//            oldConvName.text = BotterSettingsManager.ChatTitleText
+//            oldConvText.text = ChatSessionManager.shared.getActiveSessionMsg()
+//            logoImage.tintColor = BotterSettingsManager.FontColor
+//            logoImage.image = BotterSettingsManager.logo
+//            let logo : UIImage = UIImage(named: "botterIcon", in: MyFrameworkBundle.bundle , compatibleWith: nil)!
+//
+//            if BotterSettingsManager.logo == logo{
+//                self.logoImage.contentMode = .center
+//            }else{
+//                self.logoImage.contentMode = .scaleAspectFit
+//            }
+//        }else{
+//            updateHeaderHeight(height: 268)
+//            continueSessionView.isHidden = true
+//        }
+        
+        
         presenter.loadForms()
         searchBox.cParent = self
         searchBox.isHidden = !BotterSettingsManager.hasFAQs
@@ -114,14 +116,28 @@ extension b_StartFormViewController: StartFormViewInterface {
     }
 }
 
-extension b_StartFormViewController : UITableViewDataSource{
+extension b_StartFormViewController : UITableViewDataSource , UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.dataCells.count
+        return self.presenter.dataCells.count == 0 ? 1 : self.presenter.dataCells.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if self.presenter.dataCells.count == 0 {
+            let header = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as? HeaderTableViewCell
+            header!.action = {
+                self.continueConversationClicked()
+            }
+            
+            return header ?? UITableViewCell()
+        }
         return self.presenter.dataCells[indexPath.row]
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = self.presenter.dataCells[indexPath.row] as? CustomActionTableViewCell{
+            
+            cell.action.action()
+        }
+    }
     
 }

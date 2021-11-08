@@ -70,7 +70,25 @@ extension StartFormPresenter: StartFormPresenterInterface {
     func getCells(){
         dataCells.removeAll()
         var dataList = [UITableViewCell]()
+        
         if B_SocketManager.first{
+           
+            for action in BotterSettingsManager.actions{
+                if let view = self.view as? b_StartFormViewController {
+                let cCell = view.tableView.dequeueReusableCell(withIdentifier: "CustomActionTableViewCell") as? CustomActionTableViewCell
+                cCell?.setData(customAction: action)
+                dataList.append(cCell ?? UITableViewCell())
+                }
+            }
+            
+            if let view = self.view as? b_StartFormViewController {
+                let header = view.tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as? HeaderTableViewCell
+                header!.action = {
+                    view.continueConversationClicked()
+                }
+                dataList.append(header ?? UITableViewCell())
+            }
+            
             for item in self.botData.startForm.inputs {
                 if let view = self.view as? b_StartFormViewController {
                     switch item.type {

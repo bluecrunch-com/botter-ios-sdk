@@ -305,6 +305,27 @@ BotterSettingsManager.logo = UIImage()
 BotterSettingsManager.language  = .english
 ```
 
+You can add custom action cards to the welcome screen by providing title and action icone like following:
+
+```swift
+BotterSettingsManager.addCustomActionAtIntro(title: "Register", icon: UIImage.init(named: "2561436_text_file_icon")!) {
+            //Open app with login / registration as root
+        }
+```
+
+if you need to clear all past action in case of status changes or before creating new actions , you can use this code:
+
+```swift
+BotterSettingsManager.clearCustomActions()
+```
+
+To clear current chat session and user attributes you can reset user data :
+
+```swift
+BotterSettingsManager.resetUserData()
+```
+
+
 [back to top](#readme)
 
 ## On-premise extra customizations

@@ -10,11 +10,11 @@ Pod::Spec.new do |spec|
 
   
 
-  spec.name         = "Botter"
-  spec.version      = "1.1.8"
+  spec.name         = "Botter SDK"
+  spec.version      = "1.1.9"
   spec.summary      = "Botter is an integration with Botter Chatbot"
 
-  spec.homepage     = "https://github.com/NoraSayed135/Botter"
+  spec.homepage     = "https://github.com/bluecrunch-com/botter-ios-sdk"
   
   spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
@@ -30,9 +30,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  #spec.author             = { "Nora" => "nora.sayed@bluecrunch.com" }
-  # Or just: spec.author    = "Nora"
-  spec.authors            = { "Nora" => "nora.sayed@bluecrunch.com" , "Nora2" => 'norasayed135@gmail.com'}
+  spec.authors            = { "BOTTER" => "hello@botter.ai"}
   # spec.social_media_url   = "https://twitter.com/Nora"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -18,7 +18,7 @@ class LocalStrings {
         "Yes" : "نعم" ,
         "No" : "لا",
         "back in 3h":"Back in 3h",
-        "Write a replay":"اكتب رساله",
+        "Write a reply":"اكتب رساله",
         "We run on Botter" : "We run on Botter",
         "We run on BOTTER" : "We run on BOTTER",
         "We run on ":"We run on ",
